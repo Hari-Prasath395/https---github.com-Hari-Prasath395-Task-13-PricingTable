@@ -1,19 +1,25 @@
-import logo from "./logo.svg";
+
 import "./App.css";
+
 import React, { useState } from "react";
 import Card from './componants/card';
+import Counter from './pages/counter'
+import Pricing from './pages/pricing';
+import Cart from './pages/cart';
+
 function App() {
+  const[page,setPage]=useState('pricing');
   return (
     <div className="App">
-      <section className="pricing py-5">
-        <div className="container">
-          <div className="row">
-           <Card price='0'/>
-           <Card price='9'/>
-           <Card price='49'/>
-          </div>
-        </div>
+      <section className="pricing py-5"> 
+      {page==='counter'&& <Counter/>}
+      {page==='pricing'&& <Pricing/>}
+      {page==='cart'&& <Cart/>}
+      {/* {page==='task'&& <Task/>} */}
+      
       </section>
+    
+   
     </div>
   );
 }

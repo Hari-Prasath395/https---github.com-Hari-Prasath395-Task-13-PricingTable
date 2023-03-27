@@ -2,7 +2,7 @@ import React from "react";
 
 export default  function Card(props){
     const {price} = props;
-    return  <div className="col-lg-4">
+    return  (<div className="col-lg-4">
     <div className="card mb-5 mb-lg-0">
       <div className="card-body">
         <h5 className="card-title text-muted text-uppercase text-center">
@@ -70,4 +70,5 @@ export default  function Card(props){
       </div>
     </div>
   </div>
+    )
 }

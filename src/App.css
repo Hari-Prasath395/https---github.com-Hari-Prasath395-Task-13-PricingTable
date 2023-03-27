@@ -1,4 +1,4 @@
-section.pricing {
+ section.pricing {
   background: #007bff;
   background: linear-gradient(to right, #0062E6, #33AEFF);
 }
@@ -60,4 +60,19 @@ section.pricing {
   .pricing .card:hover .btn {
     opacity: 1;
   }
+} 
+
+.card {
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: red;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
 }
